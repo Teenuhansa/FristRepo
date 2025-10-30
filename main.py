@@ -1,15 +1,14 @@
 # Simple Python Program: Add Two Numbers
 
+def add_numbers(a, b):
+    return a + b
+
 # User input
-num1 = input("Enter first number: ")
-num2 = input("Enter second number: ")
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
 
-# Convert input to integers
-num1 = int(num1)
-num2 = int(num2)
-
-# Calculate sum
-sum = num1 + num2
+# Calculate sum using function
+result = add_numbers(num1, num2)
 
 # Print result
-print("The sum of", num1, "and", num2, "is:", sum)
+print("The sum of", num1, "and", num2, "is:", result)
