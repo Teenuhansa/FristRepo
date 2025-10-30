@@ -1,14 +1,21 @@
-# Simple Python Program: Add Two Numbers
+# Simple Python Program: Add and Subtract Two Numbers
 
 def add_numbers(a, b):
+    """Function to add two numbers"""
     return a + b
+
+def subtract_numbers(a, b):
+    """Function to subtract second number from first"""
+    return a - b
 
 # User input
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
-# Calculate sum using function
-result = add_numbers(num1, num2)
+# Perform calculations
+sum_result = add_numbers(num1, num2)
+sub_result = subtract_numbers(num1, num2)
 
-# Print result
-print("The sum of", num1, "and", num2, "is:", result)
+# Print results
+print("The sum of", num1, "and", num2, "is:", sum_result)
+print("The subtraction of", num2, "from", num1, "is:", sub_result)
